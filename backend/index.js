@@ -21,7 +21,12 @@ mongoose
         useNewUrlParser: true,
         useUnifiedTopology: true
     })
-    .then(console.log("Connected to MongoDB"))
+    .then(() => {
+
+
+        
+        console.log("Connected to MongoDB", process.env.MONGO_URL)
+    })
     .catch((err) => console.log("NOT CONNECTED TO NETWORK", err))
 
 app.use('/', Routes);
