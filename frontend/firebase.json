@@ -1,6 +1,7 @@
 {
   "hosting": {
-    "public": "public",
+    "site": "studentapp-9c721",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
